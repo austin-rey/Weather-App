@@ -18,10 +18,11 @@ class UI{
 
         var sunrise = timeConverter(city.sys.sunrise);
         var sunset = timeConverter(city.sys.sunset);
+        var icon = `https://openweathermap.org/img/w/${city.weather[0]['icon']}.png`;
 
         this.location.textContent = `${city.name}`;
-        this.desc.textContent = city.description;
-        this.icon.setAttribute('src', 'https://openweathermap.org/img/w/50d.png');
+        this.desc.textContent = `${city.weather[0]['description']}`;
+        this.icon.setAttribute('src', icon);
         this.temp.textContent = `Temp: ${city.main.temp} F`;
         this.tempLow.textContent = `Low ${city.main.temp_min} F`;
         this.tempHigh.textContent = `High: ${city.main.temp_max} F`;
