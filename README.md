@@ -1,5 +1,3 @@
 # Weather-App
 
-# Things to add
-# + Radard Map
-# + Forecast Chart
+##### URL: https://javascript-weather-app.herokuapp.com/
